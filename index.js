@@ -123,12 +123,6 @@ searchForm.addEventListener("submit", function onSearchFormSubmitted(event) {
     movie.title.toLowerCase().includes(keyword)
   );
 
-  /* for (const movie of movies) {
-    if (movie.title.toLowerCase().includes(keyword)) {
-      filteredMovies.push(movie)
-    }
-  } */
-
   if (filteredMovies.length === 0) {
     return alert("cannot find " + keyword);
   }
